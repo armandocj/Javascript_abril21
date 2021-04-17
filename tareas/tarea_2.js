@@ -1,4 +1,5 @@
 // tarea 2: factorial de un numero N
+console.info('### Tarea 2: Factorial de un numero\n')
 
 var numeroFactorial = 5;
 var factorial = 1;
