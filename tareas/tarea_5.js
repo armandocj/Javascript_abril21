@@ -13,5 +13,7 @@ function numeroDeVocales(cadena) {
     return contador;
 }
 
-console.log(numeroDeVocales('yurishi'))
-console.log(numeroDeVocales('paranguritirimicuaro'))
+var cadena = 'yurishi'
+console.log('El numero de vocales de la cadena ' + cadena + ' son ' + numeroDeVocales(cadena))
+cadena = 'paranguritirimicuaro'
+console.log('El numero de vocales de la cadena ' + cadena + ' son ' + numeroDeVocales(cadena))
