@@ -35,3 +35,24 @@ console.log(`El menor de cada tercio del arreglo de números ${entrada} es ${sep
 
 entrada = [8,7,6,5,4]
 console.log(`El menor de cada tercio del arreglo de números ${entrada} es ${separaEnTres(entrada)}`)
+
+// ----------
+// Refactorizado
+
+
+function separaPorN (arreglo, cadaCuantos) {
+    let salida = [];
+
+    while(arreglo[0]){
+        salida.push(Math.min(...arreglo.splice(0,cadaCuantos)));
+    }
+
+    return salida;
+}
+
+console.log('### Salida refactorizada')
+entrada = [7,6,5,3,4,5,3,2,4]
+console.log(`El menor de cada tercio del arreglo de números ${entrada} es ${separaPorN(entrada,3)}`)
+
+entrada = [8,7,6,5,4]
+console.log(`El menor de cada tercio del arreglo de números ${entrada} es ${separaPorN(entrada,3)}`)
