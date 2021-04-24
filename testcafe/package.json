@@ -1,0 +1,11 @@
+{
+  "name": "testcafe",
+  "version": "1.0.0",
+  "description": "Pruebas en testcafe",
+  "main": "pageObjectModel.js",
+  "scripts": {
+    "test": "testcafe chrome:headless *.js"
+  },
+  "author": "Armando Celada",
+  "license": "ISC"
+}
