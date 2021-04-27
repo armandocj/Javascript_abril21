@@ -46,6 +46,19 @@ test('Probar mover el slider', async t => {
     await t
     .click(pagina.checkBoxTriedTestcafe)
     .expect(pagina.checkBoxTriedTestcafe.checked).ok()
-    .dragToElement(pagina.slider.handle, pagina.slider.tick.withText('9'), {speed: 0.1})
+    .dragToElement(pagina.slider.handle, pagina.slider.tick.withText('9'), {speed: 0.1});
+
+    console.log(await pagina.slider.handle.getAttribute('style').left)
+    // TArea opcional: como validamos que si esta?
+});
+
+test('Probar posicion 7 u 8 u 9', async t => {
+    await t
+    .click(pagina.checkBoxTriedTestcafe)
+    .expect(pagina.checkBoxTriedTestcafe.checked).ok()
+    .dragToElement(pagina.sliderV2.handle, pagina.sliderV2.tick.withText('7'), {speed: 0.1})
+    .expect(pagina.slider.handle.getAttribute('style')).eql(pagina.sliderV2.barPercentage7)
+
+    console.log(await pagina.slider.handle.getAttribute('style'))
     // TArea opcional: como validamos que si esta?
 });
