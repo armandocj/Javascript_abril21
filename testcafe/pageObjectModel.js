@@ -13,8 +13,15 @@ class Page {
         this.sliderObjeto = Selector('#slider');
         this.slider = {
             handle: Selector('.ui-slider-handle'),
-            tick: Selector('.slider-value')
+            tick: Selector('.slider-value'),
         };
+        this.sliderV2 = {
+            handle: Selector('.ui-slider-handle'),
+            tick: Selector('.slider-value'),
+            barPercentage7: 'left: 66.6667%;',
+            barPercentage8: 'left: 77.7778%;',
+            barPercentage9: 'left: 88.8889%;', 
+        }
     }
 }
 
