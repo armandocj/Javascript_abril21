@@ -1,4 +1,4 @@
-console.log('### Tarea 5: contar el numero de vocales de una cadena\n')
+console.log('### Tarea 5: Contar el numero de vocales de una cadena\n')
 /*
 input: yurishi
 output: 3
